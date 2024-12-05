@@ -1,0 +1,42 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://chr_knight.obj" type="ArrayMesh" id=1]
+[ext_resource path="res://chr_knight.png" type="Texture" id=2]
+
+[sub_resource type="SpatialMaterial" id=1]
+albedo_texture = ExtResource( 2 )
+
+[sub_resource type="BoxShape" id=2]
+extents = Vector3( 1, 1, 1.20188 )
+
+[node name="Spatial" type="Area"]
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0412508, 0 )
+mesh = ExtResource( 1 )
+software_skinning_transform_normals = false
+material/0 = SubResource( 1 )
+
+[node name="Movimentacao" type="Tween" parent="."]
+
+[node name="Rotacao" type="Tween" parent="."]
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 0.57532, 0, 0, 0, 0.8, 0, 0, 0, 0.325, -0.0926648, 0.778438, -0.0490388 )
+shape = SubResource( 2 )
+
+[node name="Frente" type="RayCast" parent="."]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0.729623, 0 )
+cast_to = Vector3( 0, 2.5, 0 )
+
+[node name="Costas" type="RayCast" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.795045, 0 )
+cast_to = Vector3( 0, 2.5, 0 )
+
+[node name="Direita" type="RayCast" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.769996, 0 )
+cast_to = Vector3( 0, 2.5, 0 )
+
+[node name="Esquerda" type="RayCast" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.784943, 0 )
+cast_to = Vector3( 0, 2.5, 0 )
