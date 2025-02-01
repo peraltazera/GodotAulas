@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/chão grama 2.0.obj-73df0b3baa4de404ef1c2f3ec9d7cb25.mesh"
+
+[deps]
+
+files=[ "res://.import/chão grama 2.0.obj-73df0b3baa4de404ef1c2f3ec9d7cb25.mesh" ]
+
+source_file="res://chão grama 2.0.obj"
+dest_files=[ "res://.import/chão grama 2.0.obj-73df0b3baa4de404ef1c2f3ec9d7cb25.mesh", "res://.import/chão grama 2.0.obj-73df0b3baa4de404ef1c2f3ec9d7cb25.mesh" ]
+
+[params]
+
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh_flags=4286
+generate_tangents=true
+vertex_cache_optimization=true
+octahedral_compression=true

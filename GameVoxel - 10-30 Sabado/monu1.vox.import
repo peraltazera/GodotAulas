@@ -1,0 +1,17 @@
+[remap]
+
+importer="MagicaVoxel.With.Extensions.To.Mesh"
+type="Mesh"
+path="res://.import/monu1.vox-8735db6f043557e85a4cd28a3bfe018b.mesh"
+
+[deps]
+
+source_file="res://monu1.vox"
+dest_files=[ "res://.import/monu1.vox-8735db6f043557e85a4cd28a3bfe018b.mesh" ]
+
+[params]
+
+Scale=0.1
+GreedyMeshGenerator=true
+SnapToGround=false
+FirstKeyframeOnly=true

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/chão fogo.obj-743bb7c17b0fbf54e53fbd4475102692.mesh"
+
+[deps]
+
+files=[ "res://.import/chão fogo.obj-743bb7c17b0fbf54e53fbd4475102692.mesh" ]
+
+source_file="res://ground/chão fogo.obj"
+dest_files=[ "res://.import/chão fogo.obj-743bb7c17b0fbf54e53fbd4475102692.mesh", "res://.import/chão fogo.obj-743bb7c17b0fbf54e53fbd4475102692.mesh" ]
+
+[params]
+
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh_flags=4286
+generate_tangents=true
+vertex_cache_optimization=true
+octahedral_compression=true

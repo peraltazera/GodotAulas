@@ -1,0 +1,24 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://ground/ground2.png" type="Texture" id=1]
+[ext_resource path="res://chão grama 2.0.obj" type="ArrayMesh" id=2]
+[ext_resource path="res://ground/GroundLorenzo.png" type="Texture" id=3]
+[ext_resource path="res://ground/GroundLorenzo.obj" type="ArrayMesh" id=4]
+
+[sub_resource type="ORMSpatialMaterial" id=1]
+albedo_texture = ExtResource( 1 )
+
+[sub_resource type="ORMSpatialMaterial" id=2]
+albedo_texture = ExtResource( 3 )
+
+[node name="Spatial" type="Spatial"]
+
+[node name="ChãoGrama20" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.226099, 0, 1.01435 )
+mesh = ExtResource( 2 )
+material/0 = SubResource( 1 )
+
+[node name="GroundLorenzo" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.572009, 0, 3.86705 )
+mesh = ExtResource( 4 )
+material/0 = SubResource( 2 )

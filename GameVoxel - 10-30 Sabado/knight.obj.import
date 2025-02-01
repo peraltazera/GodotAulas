@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/knight.obj-d1dc08ca0855897d9a038576b089d53b.mesh"
+
+[deps]
+
+files=[ "res://.import/knight.obj-d1dc08ca0855897d9a038576b089d53b.mesh" ]
+
+source_file="res://knight.obj"
+dest_files=[ "res://.import/knight.obj-d1dc08ca0855897d9a038576b089d53b.mesh", "res://.import/knight.obj-d1dc08ca0855897d9a038576b089d53b.mesh" ]
+
+[params]
+
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh_flags=4286
+generate_tangents=true
+vertex_cache_optimization=true
+octahedral_compression=true

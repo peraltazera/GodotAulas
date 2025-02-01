@@ -1,0 +1,40 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://heman.obj" type="ArrayMesh" id=1]
+[ext_resource path="res://Imagem do WhatsApp de 2024-12-07 à(s) 11.28.39_f7519228.jpg" type="Texture" id=2]
+
+[sub_resource type="SpatialMaterial" id=1]
+albedo_texture = ExtResource( 2 )
+
+[sub_resource type="BoxShape" id=2]
+extents = Vector3( 1, 1.66434, 0.610974 )
+
+[node name="Player" type="Area"]
+
+[node name="Modelo" type="MeshInstance" parent="."]
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="Movimentacao" type="Tween" parent="."]
+
+[node name="Rotacao" type="Tween" parent="."]
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.71304, 0 )
+shape = SubResource( 2 )
+
+[node name="Frente" type="RayCast" parent="."]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 1.5, 0 )
+cast_to = Vector3( 0, 2.5, 0 )
+
+[node name="Costas" type="RayCast" parent="."]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 1.5, 0 )
+cast_to = Vector3( 0, 2.5, 0 )
+
+[node name="Direita" type="RayCast" parent="."]
+transform = Transform( -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, 1.5, 0 )
+cast_to = Vector3( 0, 2.5, 0 )
+
+[node name="Esquerda" type="RayCast" parent="."]
+transform = Transform( -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 0, 1.5, 0 )
+cast_to = Vector3( 0, 2.5, 0 )
