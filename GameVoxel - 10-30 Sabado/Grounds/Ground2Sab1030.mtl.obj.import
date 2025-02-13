@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Ground2Sab1030.mtl.obj-537be4016ae7d58d9762fe67934983a1.mesh"
+
+[deps]
+
+files=[ "res://.import/Ground2Sab1030.mtl.obj-537be4016ae7d58d9762fe67934983a1.mesh" ]
+
+source_file="res://Grounds/Ground2Sab1030.mtl.obj"
+dest_files=[ "res://.import/Ground2Sab1030.mtl.obj-537be4016ae7d58d9762fe67934983a1.mesh", "res://.import/Ground2Sab1030.mtl.obj-537be4016ae7d58d9762fe67934983a1.mesh" ]
+
+[params]
+
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh_flags=4286
+generate_tangents=true
+vertex_cache_optimization=true
+octahedral_compression=true

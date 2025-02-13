@@ -16,4 +16,9 @@ func movimentacao():
 		if not $Direita.is_colliding() : direcao = Vector3.LEFT
 	elif Input.is_action_pressed("ui_left"):
 		if not $Esquerda.is_colliding() : direcao = Vector3.RIGHT
-	
+		
+	var posicaoInicial = self.translation
+	var posicaoFinal = posicaoInicial + (direcao*2)
+	$Movimentacao.interpolate_property(self, "translation", 
+		posicaoInicial, posicaoFinal, 0.1, Tween.TRANS_BOUNCE, Tween.EASE_OUT)
+	$Movimentacao.start()

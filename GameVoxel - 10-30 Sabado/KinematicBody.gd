@@ -12,4 +12,4 @@ func _physics_process(_delta):
 	novaFaixa = int(translation.z)
 	if novaFaixa == velhaFaixa+2:
 		velhaFaixa = novaFaixa
-		get_parent().AdicionarFaixa()
+		#get_parent().AdicionarFaixa()

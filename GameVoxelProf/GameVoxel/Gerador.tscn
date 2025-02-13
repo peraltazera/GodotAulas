@@ -1,0 +1,17 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Personagem/chr_knight4444444.obj" type="ArrayMesh" id=1]
+[ext_resource path="res://chr_knight.png" type="Texture" id=2]
+[ext_resource path="res://Scenes/Gerador.gd" type="Script" id=3]
+
+[sub_resource type="ORMSpatialMaterial" id=1]
+albedo_texture = ExtResource( 2 )
+
+[node name="Spatial" type="Spatial"]
+script = ExtResource( 3 )
+
+[node name="ChrKnight4444444" type="MeshInstance" parent="."]
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="Timer" type="Timer" parent="."]
